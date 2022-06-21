@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install
       - run: npx tailwindcss -i ./styles/styles.css -o ./public/styles.css --minify
-      - run: cp CNAME static/CNAME
+      - run: cp CNAME ./static/CNAME
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@v0.14.1
         env:
