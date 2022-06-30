@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
-<p>Click <a href="{{ get_url(path="@/blog/_index.md") }}">here</a> to see my posts.</p>
+
+<div class="flex">
+    <img src="{{get_url(path="coffee.jpeg")}}" class="object-cover h-48 w-64 ">
+    <block class="leading-loose mx-4">
+        <p>Caffeinated Gorillas is the personal website of Chris Hamons.</p>
+        <p>On the <a href="/blog" class="no-underline hover:underline">blog</a> I keep some ramblings on programming, management, and remote development.</p>
+        <p>You can find my latest resume <a href="{{get_url(path="resume.pdf")}}" class="no-underline hover:underline">here</a>.</p>
+        <p>To contact me via e-mail: chris dot hamons at gmail dot com</p>
+    </block>
+</div>
 {% endblock content %}
