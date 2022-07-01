@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="text-3xl font-bold underline">
-    {{ page.title }}
-</h1>
-<p class="text-3xl underline"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+<div class="flex">
+    <h1 class="flex text-xl font-medium antialiased flex-none hidden md:block h-screen border-solid border-gray-300 pr-6 mb-6" style="border-right-width: 1px;">
+        <div class="">{{ page.title }}</div>
+        <p class="font-semibold pl-2 ">({{ page.date }})</p>
+    </h1>
+
+    <div id="markdown-container" class="ml-8 text-lg flex-auto">
+    {{ page.content | safe }}
+    </div>
+</div>
 {% endblock content %}

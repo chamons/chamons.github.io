@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="text-3xl">
+<h1 class="text-center text-xl font-medium md:text-left underline">
     {{ section.title }}
 </h1>
-<ul>
+<ul class="pt-4 text-lg">
     {% for page in section.pages %}
-    <li class="text-xl"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    <div class="flex">
+        <li class="link"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+        <p class="pl-2"> ({{ page.date }})</p>
+    </div>
     {% endfor %}
 </ul>
 {% endblock content %}
