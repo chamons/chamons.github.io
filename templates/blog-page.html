@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex">
-    <h1 class="flex text-xl font-medium antialiased flex-none hidden md:block h-screen border-solid border-gray-300 pr-6 mb-6" style="border-right-width: 1px;">
+<div class="flex flex-col md:flex-row">
+    <h1 class="flex text-xl font-medium antialiased flex-none md:hidden pb-5 mb-4 border-solid border-gray-300 border-b-2">
+        <div class="">{{ page.title }}</div>
+        <p class="font-semibold pl-2 ">({{ page.date }})</p>
+    </h1>
+    <h1 class="flex text-xl font-medium antialiased flex-none hidden md:block h-screen border-solid border-gray-300 pr-6 mb-6 border-r-2">
         <div class="">{{ page.title }}</div>
         <p class="font-semibold pl-2 ">({{ page.date }})</p>
     </h1>
 
-    <div id="markdown-container" class="ml-8 text-lg flex-auto">
+    <div id="markdown-container" class="md:ml-8 text-lg flex-auto leading-loose">
     {{ page.content | safe }}
     </div>
 </div>

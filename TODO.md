@@ -1,2 +1,0 @@
-- Create a on top title for mobile in blog.html
-- Write first post
