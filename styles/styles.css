@@ -10,4 +10,10 @@
     #markdown-container a {
         @apply text-blue-600/90 underline
     }
+
+    .lists ul{
+        list-style: disc;
+        margin: 0.0rem;
+        padding: 1rem;
+    }
 }
