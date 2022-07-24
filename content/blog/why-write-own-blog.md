@@ -3,7 +3,7 @@ title = "Why Blog By Hand"
 date = 2022-07-24
 +++
 
-There are many options today for posting blog style content today, including [Medium](https://medium.com/@donblas) where I've previously written some content. Many of them are free and provide very usable editors, and provide very professional themes. So setting up my own site took significantly more time and the final site is no better in the end. However, it gave me the opportunity to learn learn some web-tech I haven't had the chance to use before in my work as SDK engineering.
+There are many options today for posting blog style content today, including [Medium](https://medium.com/@donblas) where I've previously written some content. Many of them are free and provide very usable editors, and provide very professional themes. So setting up my own site took significantly more time and the final site is no better in the end. However, it gave me the opportunity to learn learn some web-tech I haven't had the chance to use before in my work in SDK engineering.
 
 <br>
 
