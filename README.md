@@ -1,3 +1,5 @@
 # chamons.github.io
 
-Blog Source for https://www.caffeinatedgorillas.com/
+Previous source for https://www.caffeinatedgorillas.com/
+
+Now powered by https://caffinatedgorilla.bearblog.dev/
